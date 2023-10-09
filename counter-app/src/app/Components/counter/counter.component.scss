@@ -1,0 +1,42 @@
+.heading-c {
+     text-align: center;
+}
+
+.counter {
+
+     display: flex;
+     justify-content: center;
+
+     div {
+          width: 20%;
+          text-align: center;
+          margin: auto;
+          padding: 10px;
+          border-radius: 10px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          ;
+
+          div {
+               display: flex;
+               gap: 15px;
+               width: 50%;
+
+               button {
+                    background-color: #3498db;
+                    width: 50%;
+                    height: 40px;
+                    color: white;
+                    font-size: 25px;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+
+               }
+
+               :hover {
+                    background-color: #10486e;
+               }
+          }
+
+     }
+}
