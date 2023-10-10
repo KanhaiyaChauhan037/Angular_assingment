@@ -1,0 +1,32 @@
+<div class="task_3">
+     <h1>Task-1 && 2</h1>
+     <div class="task_3a">
+          <input [(ngModel)]="newItem" placeholder="Add a new item">
+          <button (click)="addItem()">Add</button>
+
+     </div>
+     <ul>
+          <li *ngFor="let item of items">
+               <div class="itemtask">
+                    <h3 *ngIf="!item.editing">{{ item.text }}</h3>
+                    <input *ngIf="item.editing" [(ngModel)]="item.text">
+                    <div>
+                         <button (click)="editItem(item)">Edit</button>
+                         <button class="saveb" (click)="saveItem(item)" *ngIf="item.editing">Save</button>
+                         <button class="deleted" (click)="removeItem(item)">Remove</button>
+                    </div>
+               </div>
+          </li>
+     </ul>
+
+     <!-- second way to apend data in browser -->
+     <!-- <ul>
+     <li *ngFor="let item of items; let i = index">
+          <span *ngIf="!item.editing">{{ item }}</span>
+          <input *ngIf="item.editing" [(ngModel)]="items[i]">
+          <button (click)="toggleEditing(i)">Edit</button>
+          <button (click)="saveEdit(i)" *ngIf="item.editing">Save</button>
+          <button (click)="removeItem(i)">Remove</button>
+     </li>
+</ul> -->
+</div>

@@ -1,0 +1,109 @@
+.task_3 {
+     .task_3a {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          width: 35%;
+          padding: 15px;
+          margin: auto;
+          row-gap: 10px;
+
+          input {
+               width: 25rem;
+               margin: auto;
+               padding: 10px;
+               font-size: 16px;
+               color: rgb(78, 7, 7);
+               font-weight: bold;
+               border-bottom: 2px solid rgb(43, 15, 15);
+               border-top: none;
+               border-left: none;
+               border-right: none;
+               outline: none;
+               border-radius: 10px;
+          }
+
+          button {
+               width: 20%;
+               height: 5vh;
+               margin: auto;
+               border: none;
+               background-color: greenyellow;
+               border-radius: 5px;
+               font-size: 16px;
+               cursor: pointer;
+
+          }
+     }
+
+     h1 {
+          text-align: center;
+
+     }
+
+     ul {
+          width: 40%;
+          margin: auto;
+          padding-top: 5px;
+          padding-right: 10px;
+          padding-bottom: 5px;
+          box-shadow: rgb(61, 204, 248) 0px 2px 8px 0px;
+
+          .itemtask {
+               display: flex;
+               padding: 5px;
+               justify-content: space-between;
+               align-items: center;
+
+               input {
+
+                    padding: 10px;
+                    font-size: 16px;
+                    color: rgb(78, 7, 7);
+                    font-weight: bold;
+                    border-bottom: 2px dotted rgb(43, 15, 15);
+                    border-top: none;
+                    border-left: none;
+                    border-right: none;
+                    outline: none;
+                    border-radius: 5px;
+
+               }
+
+               div {
+                    display: flex;
+                    gap: 20px;
+
+                    button {
+                         margin: auto;
+                         border: none;
+                         background-color: rgb(7, 143, 48);
+                         border-radius: 5px;
+                         font-size: 16px;
+                         cursor: pointer;
+                         padding: 10px;
+                         color: white;
+                    }
+
+                    .saveb {
+                         background-color: rgb(15, 95, 8);
+                    }
+
+                    :hover {
+                         background-color: rgb(7, 46, 3);
+                    }
+
+                    .deleted {
+                         background-color: red;
+                    }
+
+                    :hover {
+                         background-color: rgb(114, 12, 12);
+                    }
+               }
+
+
+          }
+
+     }
+}
