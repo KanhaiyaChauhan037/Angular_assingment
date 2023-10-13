@@ -1,4 +1,62 @@
 <div class="form_item">
-     <h1>welcome to Form data</h1>
-     <h4>This is just for routing check using anguler js</h4>
+     <h1>Welcome to Form data</h1>
+
+     <!-- <form #formdata="ngForm" (ngSubmit)="postdata(formdata.value)" novalidate>
+          <div class="form-group">
+               <label for="name">Item Name:</label>
+
+               <input type="text" placeholder="Item Name" name="name" id="name" ngModel required #name="ngModel">
+
+               <div *ngIf="name?.errors" class="error-message">Item name is required.</div>
+
+          </div>
+
+          <div class="form-group">
+               <label for="desc">Item Description:</label>
+               <input type="text" placeholder="Item Description" name="desc" id="desc" ngModel required #desc="ngModel">
+
+               <div *ngIf="desc?.errors" class="error-message">Item description is required.</div>
+
+          </div>
+
+          <div class="form-group">
+               <label for="price">Item Price:</label>
+               <input type="number" placeholder="Item Price" name="price" id="price" ngModel required #price="ngModel">
+
+               <div *ngIf="price?.errors" class="error-message">Item price is required.</div>
+
+          </div>
+
+          <button type="submit" [disabled]="formdata.invalid">Submit</button>
+     </form> -->
+<div class="form_item">
+     <form #formdata="ngForm" (ngSubmit)="postdata(formdata.value)" >
+          <div class="form-group">
+               <label for="name">Item Name:</label>
+               <input type="text" placeholder="Item Name" name="name" id="name" ngModel required #name="ngModel">
+               <div *ngIf="formSubmitted && name?.invalid" class="error-message">Item name is required.</div>
+          </div>
+
+          <div class="form-group">
+               <label for="desc">Item Description:</label>
+               <input type="text" placeholder="Item Description" name="desc" id="desc" ngModel required #desc="ngModel">
+               <div *ngIf="formSubmitted && desc?.invalid" class="error-message">Item description is required.</div>
+          </div>
+
+          <div class="form-group">
+               <label for="price">Item Price:</label>
+               <input type="number" placeholder="Item Price" name="price" id="price" ngModel required #price="ngModel">
+               <div *ngIf="formSubmitted && price?.invalid" class="error-message">Item price is required.</div>
+          </div>
+
+          <button type="submit">Submit</button>
+     </form>
+
+     <div *ngFor="let data of data">
+          <p>{{data.name}}</p>
+          <p>{{data.desc}}</p>
+          <p> {{data.price}}</p>
+     </div>
+</div>
+
 </div>
