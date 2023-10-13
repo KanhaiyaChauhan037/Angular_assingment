@@ -1,0 +1,32 @@
+.main_nav {
+     display: flex;
+     justify-content: space-between;
+     background: #000;
+     color: rgb(255, 255, 255);
+     padding: 20px;
+     align-items: center;
+}
+.main_nav>a{
+     color: white;
+          text-decoration: none;
+}
+.main_nav1 {
+     width: 20%;
+     display: flex;
+     justify-content: space-between;
+     gap: 30px;
+     font-weight: bold;
+     font-size: 17px;
+     color: white;
+     align-items: center;
+}
+
+.main_nav1>a {
+     color: white;
+     text-decoration: none;
+}
+
+.main_nav1>a:hover {
+     color: yellow;
+     cursor: pointer;
+}
