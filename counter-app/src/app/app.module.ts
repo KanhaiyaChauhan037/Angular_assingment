@@ -11,6 +11,10 @@ import { FormsModule } from "@angular/forms";
 import { TastComponent } from './Day4/tast/tast.component';
 import { ItemlistComponent } from './Day4/itemlist/itemlist.component';
 import { FormdataComponent } from './Day4/formdata/formdata.component';
+import { Task1Component } from './Day6/task1/task1.component';
+import { Task2Component } from './Day6/task2/task2.component';
+import { HttpClientModule } from "@angular/common/http";
+import { Day6navbarComponent } from './Day6/day6navbar/day6navbar.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,12 +24,15 @@ import { FormdataComponent } from './Day4/formdata/formdata.component';
     ItemListComponent,
     TastComponent,
     ItemlistComponent,
-    FormdataComponent
+    FormdataComponent,
+    Task1Component,
+    Task2Component,
+    Day6navbarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

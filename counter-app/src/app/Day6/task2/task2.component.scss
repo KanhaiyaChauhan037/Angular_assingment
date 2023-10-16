@@ -1,0 +1,29 @@
+  .main {
+       display: grid;
+       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+       gap: 20px;
+       justify-content: center;
+  }
+
+  .main>div {
+       background-color: #ffffff;
+       padding: 20px;
+       border: 1px solid #ccc;
+       border-radius: 5px;
+       text-align: center;
+
+       img {
+            max-width: 100%;
+            height: 250px;
+       }
+
+       h4 {
+            font-size: 20px;
+            margin: 10px 0;
+       }
+
+       p {
+            font-size: 16px;
+            margin: 0;
+       }
+  }
